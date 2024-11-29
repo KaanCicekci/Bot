@@ -1,8 +1,7 @@
 import discord
 from discord.ext import commands
 
-# Replace with your bot token (don't share it publicly!)
-TOKEN = 'Token girin'
+TOKEN = 'token girin'
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -11,16 +10,14 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     print(f'{bot.user} çevrimiçi!')
-
-# Define the dictionary
 sözlük = {
-    "Plastik": "Dönüştürülebilir",
-    "Karton": "Dönüştürülebilir",
-    "Strafor": "Dönüştürülemez",
-    "Metal": "Dönüşebilir",
-    "Uranyum": "Dönüşemez",
-    "Pil": "Dönüşebilir",
-    "Fosil Yakıt": "Dönüştürülemez"
+    "plastik": "Dönüştürülebilir",
+    "karton": "Dönüştürülebilir",
+    "strafor": "Dönüştürülemez",
+    "metal": "Dönüşebilir",
+    "uranyum": "Dönüşemez",
+    "pil": "Dönüşebilir",
+    "fosil Yakıt": "Dönüştürülemez"
 }
 
 @bot.command()
